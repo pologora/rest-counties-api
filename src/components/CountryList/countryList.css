@@ -1,0 +1,12 @@
+.country-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (min-width: 860px) {
+  .country-list {
+    justify-content: space-between;
+  }
+}

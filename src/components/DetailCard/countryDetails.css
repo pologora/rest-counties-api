@@ -1,0 +1,83 @@
+.country-details {
+  color: var(--cl-text);
+  padding: 2rem 1.5rem;
+}
+.country-details__back-button {
+  color: inherit;
+  background-color: var(--cl-elements);
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 1px 1px 3px 0px rgba(66, 68, 90, 1);
+  cursor: pointer;
+}
+.country-details__back-button-icon {
+  font-size: large;
+}
+.country-details__back-button-text {
+}
+
+.country-details__flag-container {
+  width: 100%;
+  margin-block: 3rem;
+}
+
+.country-details__flag {
+  width: 100%;
+}
+
+.country-details__properties-list-main,
+.country-details__properties-list-secondary {
+  margin-bottom: 2rem;
+}
+
+.country-details__property {
+  margin-block: 0.5rem;
+}
+
+.country-details__property-title {
+  margin-right: 0.3rem;
+  color: var(--cl-text);
+  font-weight: 600;
+}
+
+.country-details__property-value {
+  color: var(--cl-text-secondary);
+}
+
+.country-details__domain-list,
+.country-details__currencies-list,
+.country-details__languages-list {
+  display: inline-block;
+}
+
+.country-details__domain-list-item,
+.country-details__currencies-list-item,
+.country-details__languages-list-item {
+  display: inline;
+  margin-right: 0.3rem;
+}
+
+.country-details__domain-list-item:not(:last-child)::after,
+.country-details__currencies-list-item:not(:last-child)::after,
+.country-details__languages-list-item:not(:last-child)::after {
+  content: ',';
+}
+
+.country-details__border-country-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.country-details__border-country-list-item {
+  background-color: var(--cl-elements);
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  padding: 0.3rem 0.9rem;
+  box-shadow: 1px 1px 3px 0px rgba(66, 68, 90, 1);
+}

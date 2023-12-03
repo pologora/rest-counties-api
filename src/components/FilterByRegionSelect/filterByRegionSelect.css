@@ -1,0 +1,35 @@
+.filter-by-region {
+  width: 60%;
+  position: relative;
+}
+
+.filter-by-region__select {
+  width: 100%;
+  background-color: var(--cl-elements);
+  cursor: pointer;
+  color: var(--cl-text);
+  padding-block: var(--padding-block-input);
+  padding-inline: var(--padding-inline);
+  outline: none;
+  border-radius: var(--elements-border-radius);
+  appearance: none;
+}
+
+.filter-by-region__icon {
+  position: absolute;
+  right: var(--padding-inline);
+  top: var(--padding-block-input);
+  pointer-events: none;
+}
+
+.filter-by-region__option {
+  margin: 1rem;
+}
+
+@media (min-width: 480px) {
+  .filter-by-region {
+    width: 20%;
+    min-width: 150px;
+    max-width: 300px;
+  }
+}

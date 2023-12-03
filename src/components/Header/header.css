@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--cl-elements);
+  color: var(--cl-text);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+  padding-inline: var(--padding-inline);
+}
+
+.header__title {
+  font-size: 1.1rem;
+}

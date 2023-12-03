@@ -1,0 +1,45 @@
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+  background-color: var(--cl-elements);
+  color: var(--cl-text);
+  border-radius: var(--elements-border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-box-shadow);
+  margin-top: 2rem;
+}
+.card__flag-container {
+  width: 100%;
+  height: 150px;
+}
+.card__flag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__properties-container {
+  text-align: left;
+  padding: var(--padding-block-input) var(--padding-inline);
+  padding-bottom: 2.5rem;
+}
+
+.card__title {
+  margin-bottom: 1rem;
+}
+
+.card__property {
+  margin-top: 0.5rem;
+}
+
+.card__property-title {
+  margin-right: 0.3rem;
+  font-weight: 600;
+}
+
+.card__property-value {
+  color: var(--cl-text-secondary);
+}
