@@ -79,3 +79,25 @@
   padding: 0.3rem 0.9rem;
   box-shadow: 1px 1px 3px 0px rgba(66, 68, 90, 1);
 }
+
+@media (min-width: 800px) {
+  .country-details__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .country-details__flag-container {
+    width: 50%;
+  }
+
+  .country-details__properties-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .country-details__properties-list {
+    /* display: flex; */
+    width: 40%;
+  }
+}
