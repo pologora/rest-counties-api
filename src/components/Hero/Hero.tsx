@@ -13,24 +13,23 @@ const Hero = (): JSX.Element => {
   const [filteredCountries, setFilteredCountries] =
     useState<CountryType[]>(countries);
 
-  function filterAndSearchedCountries() {
-    let result = [...countries];
-    if (filter) {
-      result = countries.filter(
-        (country) => country.region.toLowerCase() === filter.toLowerCase()
-      );
-    }
-
-    if (search) {
-      result = result.filter((country) =>
-        country.name.official.toLowerCase().includes(search)
-      );
-    }
-
-    return result;
-  }
-
   useEffect(() => {
+    function filterAndSearchedCountries() {
+      let result = [...countries];
+      if (filter) {
+        result = countries.filter(
+          (country) => country.region.toLowerCase() === filter.toLowerCase()
+        );
+      }
+
+      if (search) {
+        result = result.filter((country) =>
+          country.name.official.toLowerCase().includes(search)
+        );
+      }
+
+      return result;
+    }
     const filteredCountries = filterAndSearchedCountries();
     setFilteredCountries(filteredCountries);
   }, [filter, search, countries]);

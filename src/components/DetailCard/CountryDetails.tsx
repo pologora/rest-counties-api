@@ -45,7 +45,7 @@ const CountryDetails = () => {
     subregion,
     capital,
     tld,
-    name: { common, official, nativeName },
+    name: { common, nativeName },
     currencies,
     languages,
     borders,
