@@ -11,12 +11,30 @@ const DarkModeToggleButton = (): JSX.Element => {
   };
 
   useEffect(() => {
+    const darkMode = localStorage.getItem('dark-mode');
+    if (darkMode === 'enabled') {
+      setIsDark(true);
+    }
+  }, []);
+
+  useEffect(() => {
     if (isDark) {
-      document.body.classList.add('dark');
+      enableDarkMode();
     } else {
-      document.body.classList.remove('dark');
+      disableDarkMode();
     }
   }, [isDark]);
+
+  function enableDarkMode() {
+    localStorage.setItem('dark-mode', 'enabled');
+    document.body.classList.add('dark');
+  }
+
+  function disableDarkMode() {
+    document.body.classList.remove('dark');
+    localStorage.setItem('dark-mode', 'disabled');
+  }
+
   return (
     <button onClick={handleDarkModeToggle} className='toggle-button'>
       {darkToggleIcon}
